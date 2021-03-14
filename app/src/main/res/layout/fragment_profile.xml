@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingClass" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"/>
+
+                <Button
+                    android:id="@+id/btn_addprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Add Profile"
+                    android:textSize="12dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="8dp"
+                    android:textAllCaps="false"
+                    android:background="#FF5733"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_weight=".3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="  Mobile: "
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_weight=".5"
+                        android:id="@+id/txt_mobile"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="8888888888"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight=".3"
+                        android:layout_width="0dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_height="wrap_content"
+                        android:text="  Email:"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_weight=".7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="eot@gmail.com"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp" />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/btnPetCare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:text="PetCare"
+                        android:background="#FF5733"/>
+
+                    <Button
+                        android:id="@+id/btnLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:text="Logout"
+                        android:background="#FF5733"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

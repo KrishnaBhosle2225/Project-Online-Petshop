@@ -8,7 +8,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -18,10 +18,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.theartofdev.edmodo.cropper.CropImage;
+
 
 import java.io.File;
 import java.util.HashMap;
